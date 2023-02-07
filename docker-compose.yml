@@ -1,0 +1,16 @@
+services:
+  app:
+    container_name: first-typescript
+    image: node:latest
+    working_dir: "/app"
+    volumes:
+      - type: bind
+        source: ./
+        target: /app
+    environment:
+      TZ: "Asia/Tokyo"
+    ports:
+      - "3000:3000"
+    tty: true
+    stdin_open: true
+    command: /bin/bash
