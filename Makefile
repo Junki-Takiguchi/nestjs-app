@@ -22,7 +22,10 @@ access:
 	$(CONTAINER) /bin/bash
 
 prettier:
-	$(CONTAINER) yarn prettier --write src
+	$(CONTAINER) prettier --write src
 
 lint:
 	$(CONTAINER) npx eslint src --fix
+
+ts-node:
+	$(CONTAINER) ts-node

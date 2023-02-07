@@ -1,7 +1,9 @@
 services:
   app:
-    container_name: first-typescript
-    image: node:latest
+    container_name: typescript-app
+    build:
+      context: .
+      dockerfile: Dockerfile
     working_dir: "/app"
     volumes:
       - type: bind
