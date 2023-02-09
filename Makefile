@@ -9,9 +9,6 @@ up:
 down:
 	docker compose down --rmi local -v
 
-rmi:
-	docker rmi gradle:7.5.1-jdk17
-
 start:
 	docker compose start
 
