@@ -1,5 +1,5 @@
 ## clone後のリモートリポジトリ変更
-```json
+```bash
 git remote set-url origin <remote repository url>
 ```
 
@@ -15,7 +15,7 @@ git remote set-url origin <remote repository url>
 
 2. `make access`でコンテナに接続し、Dockerfile内に記載されてる各パッケージをインストールしなおす
 ```bash
-例）
+# 例）
 npm install typescript \
     @types/node \
     ts-node
