@@ -1,20 +1,18 @@
 FROM node:latest
-WORKDIR /
-RUN npm install -g typescript \
+WORKDIR /workspace/app
+RUN npm install typescript \
     @types/node \
     ts-node
 
 # prettier
-RUN npm install -g prettier
+RUN npm install prettier
 
 # ESLint
-RUN npm install -g eslint \
+RUN npm install eslint \
     @typescript-eslint/parser \
     @typescript-eslint/eslint-plugin
 
 # ESLint config for Airbnb
-RUN npm install -g eslint-config-airbnb-base \
+RUN npm install eslint-config-airbnb-base \
     eslint-plugin-import \
     eslint-config-airbnb-typescript
-
-
