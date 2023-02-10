@@ -1,3 +1,8 @@
+## clone後のリモートリポジトリ変更
+```json
+git remote set-url origin <remote repository url>
+```
+
 ## package.jsonのパッケージ更新
 1. `package.json`の`dependencies`を削除し初期化
 ```json
