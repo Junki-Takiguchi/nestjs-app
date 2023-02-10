@@ -1,5 +1,5 @@
 FROM node:latest
-WORKDIR /
+WORKDIR /workspace/app
 RUN npm install typescript \
     @types/node \
     ts-node
@@ -16,5 +16,3 @@ RUN npm install eslint \
 RUN npm install eslint-config-airbnb-base \
     eslint-plugin-import \
     eslint-config-airbnb-typescript
-
-

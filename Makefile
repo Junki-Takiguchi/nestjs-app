@@ -19,7 +19,7 @@ access:
 	$(CONTAINER) /bin/bash
 
 prettier:
-	$(CONTAINER) prettier --write src
+	$(CONTAINER) npx prettier --write src
 
 lint:
 	$(CONTAINER) npx eslint src --fix
