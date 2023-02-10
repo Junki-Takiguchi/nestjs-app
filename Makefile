@@ -25,4 +25,4 @@ lint:
 	$(CONTAINER) npx eslint src --fix
 
 ts-node:
-	$(CONTAINER) ts-node
+	$(CONTAINER) npx ts-node

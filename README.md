@@ -1,14 +1,23 @@
-## clone後のリモートリポジトリ変更
+## 1. clone後のリモートリポジトリ変更
 ```bash
 git remote set-url origin <remote repository url>
 ```
 
-## package.jsonのパッケージ更新
+## 2. clone後のnpmパッケージのインストール
+```bash
+npm install
+```
+
+package.jsonのパッケージを更新する場合：
 1. `package.json`の`dependencies`を削除し初期化
 ```json
 {
   "name": "learn-typescript",
   "version": "1.0.0",
+  "scripts": {
+    "prettier": "npx prettier --write src",
+    "eslint": "npx eslint src --fix",
+    "ts-node": "npx ts-node"
   }
 }
 ```
@@ -37,6 +46,27 @@ npm install typescript \
     "prettier": "^2.8.4",
     "ts-node": "^10.9.1",
     "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "prettier": "npx prettier --write src",
+    "eslint": "npx eslint src --fix",
+    "ts-node": "npx ts-node"
   }
 }
+```
+
+## 各スクリプトの実行
+### Makefile
+```bash
+make build #docker compose build
+make up #docker compose up -d
+make down #docker compose down --rmi local -v
+make access #docker compose exec app /bin/bash
+```
+
+### package.json / scripts
+```bash
+npm run prettier #npx prettier --write src
+npm run eslint #npx eslint src --fix
+npm run ts-node src/something.ts #npx ts-node src/something.ts
 ```
