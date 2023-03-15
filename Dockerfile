@@ -16,3 +16,7 @@ RUN npm install eslint \
 RUN npm install eslint-config-airbnb-base \
     eslint-plugin-import \
     eslint-config-airbnb-typescript
+
+# install nest js
+RUN npm install -g @nestjs/cli
+

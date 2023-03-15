@@ -62,3 +62,6 @@ yarn.lock
 
 # lock file
 package-lock.json
+
+# DB
+db/postgres_data/*

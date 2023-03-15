@@ -16,3 +16,15 @@ services:
     tty: true
     stdin_open: true
     command: /bin/bash
+  db:
+    container_name: db_postgresql
+    image: postgres:latest
+    ports: 5432:5432
+    volumes:
+      - ./db/postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_INITDB_ARGS: "--encoding=UTF-8"
+      POSTGRES_DB: postgres
+    hostname: postgres
