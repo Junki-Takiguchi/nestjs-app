@@ -1,6 +1,6 @@
 services:
   app:
-    container_name: typescript-app
+    container_name: nest-app
     build:
       context: .
       dockerfile: Dockerfile

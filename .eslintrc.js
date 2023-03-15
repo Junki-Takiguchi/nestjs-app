@@ -14,6 +14,7 @@ module.exports = {
     },
     ignorePatterns: ["dist"],
     extends: [
+        "prettier",
         "airbnb-base",
         "airbnb-typescript/base",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
