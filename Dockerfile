@@ -18,5 +18,6 @@ RUN npm install eslint-config-airbnb-base \
     eslint-config-airbnb-typescript
 
 # install nest js
-RUN npm install -g @nestjs/cli
+RUN npm install @nestjs/cli
+RUN npm install prisma
 
