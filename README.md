@@ -70,3 +70,9 @@ npm run prettier #npx prettier --write src
 npm run eslint #npx eslint src --fix
 npm run ts-node src/something.ts #npx ts-node src/something.ts
 ```
+
+
+### 新しいプロジェクトの作成
+```bash
+$ nest new <project-name>
+```
