@@ -72,7 +72,12 @@ npm run ts-node src/something.ts #npx ts-node src/something.ts
 ```
 
 
-### 新しいプロジェクトの作成
+### 新規プロジェクトの作成
 ```bash
 $ nest new <project-name>
+```
+
+### 新規コントローラーの作成
+```bash
+$ nest new <controller-name>
 ```
